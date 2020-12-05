@@ -25,10 +25,12 @@ module.exports = {
   // 상품
   CREATE_PRODUCT_SUCCESS: "상품 생성 성공",
   GET_ONE_PRODUCT_SUCCESS: "상품 조회 성공",
+  GET_ALL_PRODUCTS_SUCCESS: "모든 상품 조회 성공",
 
   // 은행
-  CREATE_BANK_SUCCESS: "상품 생성 성공",
-  GET_ONE_BANK_SUCCESS: "상품 조회 성공",
+  CREATE_BANK_SUCCESS: "은행 생성 성공",
+  GET_ALL_BANKS_SUCCESS: "모든 은행 조회 성공",
+  GET_ONE_BANK_SUCCESS: "은행 조회 성공",
 
   /* 프로필 */
   PROFILE_GET_SUCCESS: "프로필 기본정보 조회 성공",

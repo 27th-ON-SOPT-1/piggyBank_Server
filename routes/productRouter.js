@@ -10,11 +10,11 @@ productRouter.post(
   productController.createProduct,
 );
 
-// Read all products
+// Read a product by id
 productRouter.get("/:productId", productController.getOneProduct);
 
-// Read a product by ID
-productRouter.get("/:productId");
+// Read all products
+productRouter.get("/", productController.getAllProducts);
 
 // Update a product
 productRouter.put("/:productId");

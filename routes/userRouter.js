@@ -5,11 +5,11 @@ const upload = require("../modules/multer");
 // Create a user
 userRouter.post("/", upload.single("image"), userController.signin);
 
-// Read all users
-userRouter.get("/:userId", userController.getOneUser);
+// get Profile
+userRouter.get("/:userId/profile", userController.getProfile);
 
 // Read a user by ID
-userRouter.get("/:userId");
+userRouter.get("/:userId", userController.getOneUser);
 
 // Update a user
 userRouter.put("/:userId");
