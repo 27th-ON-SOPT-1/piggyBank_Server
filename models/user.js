@@ -1,16 +1,19 @@
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define(
-    "Room",
+    "User",
     {
-      roomName: {
+      username: {
         type: DataTypes.STRING(30),
         allowNull: false,
       },
-      roomImageUrl: {
-        type: DataTypes.STRING(400),
+      profilePictureUrl: {
+        type: DataTypes.STRING(300),
         allowNull: true,
       },
     },
-    { freezeTableName: true, timestamps: true },
+    {
+      freezeTalbeName: true,
+      timestamps: true,
+    },
   );
 };

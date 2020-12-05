@@ -1,10 +1,14 @@
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define(
-    "User",
+    "Bank",
     {
-      nickname: {
+      bankName: {
         type: DataTypes.STRING(30),
         allowNull: false,
+      },
+      balance: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
       },
     },
     {

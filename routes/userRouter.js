@@ -1,11 +1,12 @@
 const express = require("express");
+const userController = require("../controllers/userController");
 const userRouter = express.Router();
-
+const upload = require("../modules/multer");
 // Create a user
-userRouter.post("/");
+userRouter.post("/", upload.single("image"), userController.signin);
 
 // Read all users
-userRouter.get("/");
+userRouter.get("/:userId", userController.getOneUser);
 
 // Read a user by ID
 userRouter.get("/:userId");

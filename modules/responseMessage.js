@@ -22,8 +22,16 @@ module.exports = {
 
   DB_ERROR: "DB 오류",
 
+  // 상품
+  CREATE_PRODUCT_SUCCESS: "상품 생성 성공",
+  GET_ONE_PRODUCT_SUCCESS: "상품 조회 성공",
+
+  // 은행
+  CREATE_BANK_SUCCESS: "상품 생성 성공",
+  GET_ONE_BANK_SUCCESS: "상품 조회 성공",
+
   /* 프로필 */
-    PROFILE_GET_SUCCESS: "프로필 기본정보 조회 성공",
-    PROFILE_POST_SUCCESS: "프로필 등록 성공",
-    PROFILE_POST_FAIL : "프로필 등록 실패"
+  PROFILE_GET_SUCCESS: "프로필 기본정보 조회 성공",
+  PROFILE_POST_SUCCESS: "프로필 등록 성공",
+  PROFILE_POST_FAIL: "프로필 등록 실패",
 };

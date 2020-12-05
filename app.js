@@ -4,11 +4,12 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const cors = require("cors");
-const { sequelize } = require("./api/models");
+const { sequelize } = require("./models");
 
-var indexRouter = require("./api/routes/index");
+var indexRouter = require("./routes/index");
 
 sequelize
+  // .sync({ alter: true, force: true })
   .sync({ alter: false })
   .then(() => {
     console.log("✅Connected to the database!");
@@ -30,7 +31,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/manitto/v1", indexRouter);
+app.use("/", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
