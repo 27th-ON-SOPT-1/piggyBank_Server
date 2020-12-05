@@ -75,11 +75,7 @@ module.exports = {
       res
         .status(statusCode.OK)
         .send(
-          util.success(
-            statusCode.OK,
-            responseMessage.PROFILE_GET_SUCCESS,
-            user,
-          ),
+          util.success(statusCode.OK, responseMessage.GET_ASSETS_SUCCESS, user),
         );
     } catch (error) {
       console.log(error);

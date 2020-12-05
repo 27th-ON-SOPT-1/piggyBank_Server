@@ -31,6 +31,7 @@ module.exports = {
   CREATE_BANK_SUCCESS: "은행 생성 성공",
   GET_ALL_BANKS_SUCCESS: "모든 은행 조회 성공",
   GET_ONE_BANK_SUCCESS: "은행 조회 성공",
+  GET_ASSETS_SUCCESS: "자산 조회 성공",
 
   /* 프로필 */
   PROFILE_GET_SUCCESS: "프로필 기본정보 조회 성공",
